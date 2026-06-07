@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXO - Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bariol&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Cores padrão Walmart */
+        :root {
+            --walmart-blue: #0071dc;
+            --walmart-yellow: #ffc220;
+            --text-dark: #333333;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: var(--text-dark);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Topo do Site */
+        header {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            color: var(--walmart-blue);
+            font-weight: 800;
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            margin: 5px 0 0 0;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+
+        /* Container Central */
+        .main-container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .main-container h2 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        /* Grid de Menus/Botões */
+        .menu-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+        }
+
+        /* Estilização dos Botões Amarelos */
+        .btn-menu {
+            background-color: var(--walmart-yellow);
+            color: #000000;
+            border: none;
+            padding: 18px 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 30px; /* Cantos arredondados e modernos */
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba
