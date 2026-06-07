@@ -13,7 +13,7 @@
     
     <style>
         :root {
-            --walmart-blue: #004f9f; /* Tom de azul mais escuro idêntico ao da imagem */
+            --walmart-blue: #004f9f; /* Tom de azul clássico */
             --text-dark: #000000;
         }
 
@@ -21,7 +21,7 @@
             margin: 0;
             padding: 40px 20px;
             font-family: 'Inter', sans-serif;
-            background-color: #f4f4f4; /* Fundo suave para destacar a folha */
+            background-color: #ffffff; /* Fundo totalmente branco */
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -29,13 +29,11 @@
             box-sizing: border-box;
         }
 
-        /* Container Principal (Folha com borda preta) */
+        /* Container Principal (Sem a borda preta de delimitação) */
         .page-container {
             background-color: #ffffff;
-            border: 2px solid #000000; /* Borda preta fina ao redor */
             width: 100%;
             max-width: 650px;
-            padding: 30px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -90,7 +88,7 @@
             gap: 4px;
         }
         .developed-by span {
-            color: #0071dc; /* Cor azul para o número da store */
+            color: #0071dc; /* Número da store */
         }
         .developed-by i {
             color: #0071dc;
@@ -142,7 +140,7 @@
             padding: 16px 20px;
             font-size: 1.25rem;
             font-weight: 500;
-            border-radius: 50px; /* Formato pílula idêntico ao Canva */
+            border-radius: 50px; /* Formato pílula */
             cursor: pointer;
             transition: all 0.2s ease;
             display: flex;
@@ -172,7 +170,6 @@
 </head>
 <body>
 
-    <!-- Container da Folha -->
     <div class="page-container">
         
         <!-- Cabeçalho Superior -->
@@ -196,9 +193,9 @@
         <!-- Saudação Central -->
         <div class="greeting">Hello Associate</div>
 
-        <!-- Grid com os 6 botões da imagem -->
+        <!-- Lista de Botões -->
         <div class="menu-list">
-            <!-- Botão 1: Management com link e ícone de cadeado -->
+            <!-- Botão 1: Management -->
             <button class="btn-nexo" onclick="window.location.href='mngt.html'">
                 <i class="fa-solid fa-lock"></i> Management
             </button>
@@ -206,7 +203,7 @@
             <!-- Botão 2: TC Check In/Out -->
             <button class="btn-nexo">TC Check In/Out</button>
             
-            <!-- Botões 3, 4, 5 e 6 limpos conforme a planta -->
+            <!-- Botões em branco aguardando funções -->
             <button class="btn-nexo"></button>
             <button class="btn-nexo"></button>
             <button class="btn-nexo"></button>
