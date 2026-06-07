@@ -3,62 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXO</title>
+    <title>NEXO - Hub</title>
+    <!-- Fonte moderna para o visual do site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
     <style>
+        /* Cores padrão Walmart */
+        :root {
+            --walmart-blue: #0071dc;
+            --walmart-yellow: #ffc220;
+            --text-dark: #333333;
+        }
+
         body {
             margin: 0;
             padding: 0;
-            font-family: sans-serif;
+            font-family: 'Inter', sans-serif;
             background-color: #ffffff;
-            color: #333333;
+            color: var(--text-dark);
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh;
         }
+
+        /* Topo do Site */
         header {
             text-align: center;
             margin-top: 50px;
+            margin-bottom: 40px;
         }
-        h1 {
-            color: #0071dc;
+
+        header h1 {
+            color: var(--walmart-blue);
+            font-weight: 800;
+            font-size: 3.5rem;
             margin: 0;
-            font-size: 3rem;
+            letter-spacing: 1px;
         }
-        p {
-            margin: 5px 0;
+
+        header p {
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            margin: 5px 0 0 0;
+            font-weight: 400;
+            opacity: 0.8;
         }
+
+        /* Container Central */
+        .main-container {
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .main-container h2 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        /* Grid de Menus/Botões */
         .menu-grid {
-            margin-top: 40px;
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            width: 300px;
+            gap: 18px;
+            width: 100%;
         }
+
+        /* Estilização dos Botões Amarelos */
         .btn-menu {
-            background-color: #ffc220;
+            background-color: var(--walmart-yellow);
+            color: #000000;
             border: none;
-            padding: 15px;
-            border-radius: 20px;
+            padding: 18px 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 30px; /* Cantos arredondados modernos */
             cursor: pointer;
-            min-height: 50px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-height: 60px;
+            text-decoration: none; /* Remove sublinhado se usarmos tag 'a' */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Efeito de passar o mouse */
+        .btn-menu:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background-color: #e5af1d;
+        }
+
+        /* Efeito de clique */
+        .btn-menu:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
 
+    <!-- Topo do Hub -->
     <header>
         <h1>NEXO</h1>
         <p>Network for Employee Management and Operations</p>
     </header>
 
-    <h2>Hello Associate</h2>
-
-    <div class="menu-grid">
-        <button class="btn-menu"></button>
-        <button class="btn-menu"></button>
-        <button class="btn-menu"></button>
-        <button class="btn-menu"></button>
-        <button class="btn-menu"></button>
+    <!-- Conteúdo Central -->
+    <div class="main-container">
+        <h2>Hello Associate</h2>
+        
+        <div class="menu-grid">
+            <!-- Primeiro botão configurado para ir para a página de Gerência -->
+            <button class="btn-menu" onclick="window.location.href='mngt.html'">Management</button>
+            
+            <!-- Outros 4 botões aguardando funções -->
+            <button class="btn-menu"></button>
+            <button class="btn-menu"></button>
+            <button class="btn-menu"></button>
+            <button class="btn-menu"></button>
+        </div>
     </div>
 
 </body>
